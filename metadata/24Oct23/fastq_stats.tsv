@@ -1,0 +1,11 @@
+file	format	type	num_seqs	sum_len	min_len	avg_len	max_len
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207309/SRR19140226_1.fastq.gz	FASTQ	DNA	700803322	70781135522	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207309/SRR19140226_2.fastq.gz	FASTQ	DNA	700803322	70781135522	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207310/SRR19140225_1.fastq.gz	FASTQ	DNA	325250810	32850331810	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207310/SRR19140225_2.fastq.gz	FASTQ	DNA	325250810	32850331810	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207311/SRR19140224_1.fastq.gz	FASTQ	DNA	429276850	43356961850	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207311/SRR19140224_2.fastq.gz	FASTQ	DNA	429276850	43356961850	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207312/SRR19140223_1.fastq.gz	FASTQ	DNA	573654434	57939097834	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207312/SRR19140223_2.fastq.gz	FASTQ	DNA	573654434	57939097834	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207313/SRR19140222_1.fastq.gz	FASTQ	DNA	515273491	52042622591	101	101.0	101
+/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217/SRX15207313/SRR19140222_2.fastq.gz	FASTQ	DNA	515273491	52042622591	101	101.0	101
