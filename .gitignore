@@ -4,6 +4,8 @@ processed/
 annotation/
 analysis/
 submission/
+**/slurm_logs/
+**/figures/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
