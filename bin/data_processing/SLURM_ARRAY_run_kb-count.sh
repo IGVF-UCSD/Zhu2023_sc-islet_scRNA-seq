@@ -20,9 +20,9 @@ echo -e "Job ID: $SLURM_JOB_ID\n"
 source activate /cellar/users/aklie/opt/miniconda3/envs/pipelines
 
 # Set file paths
-fastq_dir=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/04Jul23
+fastq_dir=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217
 output_dir=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/processed/24Oct23/kb_count
-ref_dir=/cellar/users/aklie/data/ref/genomes/hg38
+ref_dir=/cellar/users/aklie/data/ref/genomes/hg38/kb_ref
 bc_whitelist=/cellar/users/aklie/data/ref/bc_whitelists/737K-cratac-v1.rc.txt
 
 # Samples
@@ -42,8 +42,8 @@ sample_ids=(
 )
 input_dir=$fastq_dir/${experiment_accessions[$SLURM_ARRAY_TASK_ID-1]}
 sample=${sample_ids[$SLURM_ARRAY_TASK_ID-1]}
-read1=$(ls $input_dir/*_R1.fastq.gz)
-read2=$(ls $input_dir/*_R2.fastq.gz)
+read1=$(ls $input_dir/*_R1*.fastq.gz)
+read2=$(ls $input_dir/*_R2*.fastq.gz)
 
 # Make output directory if doesn't exist
 if [ ! -d $output_dir/$sample ]; then
@@ -63,7 +63,7 @@ cmd="kb count \
 $read1 $read2"
 
 echo -e "Running:\n $cmd\n"
-#eval $cmd
+eval $cmd
 
 # End time
 date
