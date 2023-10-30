@@ -3,7 +3,7 @@
 #SBATCH --output=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/bin/data_processing/slurm_logs/%x.%A_%a.out
 #SBATCH --error=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/bin/data_processing/slurm_logs/%x.%A_%a.err
 #SBATCH --cpus-per-task=16
-#SBATCH --mem=36G
+#SBATCH --mem=64G
 #SBATCH --time=02-00:00:00
 #SBATCH --array=1-5%5
 
@@ -21,9 +21,9 @@ source activate /cellar/users/aklie/opt/miniconda3/envs/pipelines
 
 # Set file paths
 fastq_dir=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/fastq/24Oct23/SRP374217
-output_dir=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/processed/24Oct23/kb_count
+output_dir=/cellar/users/aklie/data/datasets/Zhu2023_sc-islet_scRNA-seq/processed/27Oct23/kb_count
 ref_dir=/cellar/users/aklie/data/ref/genomes/hg38/kb_ref
-bc_whitelist=/cellar/users/aklie/data/ref/bc_whitelists/737K-cratac-v1.rc.txt
+bc_whitelist=/cellar/users/aklie/data/ref/bc_whitelists/3M-february-2018.txt
 
 # Samples
 experiment_accessions=(
